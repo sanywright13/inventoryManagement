@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <title>Hello </title>
 <body>
-    <h1>Hello my name is {{name}}</h1>
-    <h2>my age is {{age}}</h2>
+    <ul>
+   {% for q in output%}
+<li> <a href="{% url 'polls:detail' q.id %}">{{ q.question_text}}</a></li>
+ {% endfor %}
+</ul>
 </body>
 </html>
