@@ -20,5 +20,7 @@ urlpatterns = [
     path('polls/',include('polls.urls')),
     path('newyear/',include('newyear.urls')),
     path('flights/',include('flights.urls')),
+    path('nights/',include('nights.urls')),
     path('admin/', admin.site.urls),
+
 ]
