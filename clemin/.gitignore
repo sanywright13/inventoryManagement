@@ -1,4 +1,9 @@
 *.pyc
 __pycache__
 db.sqlite3
+<<<<<<< HEAD
 *.env
+=======
+*.env
+.vscode
+>>>>>>> test

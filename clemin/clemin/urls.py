@@ -15,22 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> test
-from django.urls import path , include
+from django.urls import path ,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inventory/',include("iventory.urls"))
-<<<<<<< HEAD
-=======
-=======
-from django.urls import path
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
->>>>>>> 73ae60d (configure postgress database with django)
->>>>>>> test
+     path('admin/', include('iventory.urls')),
 ]
